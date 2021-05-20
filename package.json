@@ -1,0 +1,25 @@
+{
+  "name": "mysqldoc",
+  "version": "1.0.0",
+  "description": "自动生成数据文档",
+  "bin": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singing123/MysqlDoc.git"
+  },
+  "author": "singing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/singing123/MysqlDoc/issues"
+  },
+  "homepage": "https://github.com/singing123/MysqlDoc#readme",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "ejs": "^3.1.6",
+    "fs-extra": "^10.0.0",
+    "mysql2": "^2.2.5"
+  },
+  "scripts": {
+    "build": "node ./src/index.js -d ebike2"
+  }
+}
