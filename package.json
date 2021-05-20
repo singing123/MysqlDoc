@@ -20,6 +20,6 @@
     "mysql2": "^2.2.5"
   },
   "scripts": {
-    "build": "node ./src/index.js -d ebike2"
+    "build": "node ./src/index.js -d mysql"
   }
 }
