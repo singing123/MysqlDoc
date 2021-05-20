@@ -8,9 +8,9 @@ const mysql = require('./db/mysql');
 
 
 function createOutputFile(output,name,data) {
-    const dir = path.join(__dirname,output);
-    const filename =path.join(dir,name)
-    if (output) fs.mkdirsSync(dir);
+    let filename = path.join(output,name);
+    console.log(filename);
+    if (output) fs.mkdirsSync(output);
     if (data) fs.writeFileSync(filename, data);
 }
 

@@ -21,7 +21,7 @@ program
         "-t, --type <type>","Type of document generated,Optional parameters html|json|xml|markdown",'html'
     )
     .option(
-        "-T, --template <template>","Template to generate HTML","./template/index.html"
+        "-T, --template <template>","Template to generate HTML",false
     )
     .option(
         "--tables","Whether to generate table comments",true
