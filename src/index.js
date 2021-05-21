@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+"use strict";
 const { program } = require("commander");
 const drive = require('./drive');
 program.version('1.0.0');
