@@ -66,7 +66,10 @@ var options = {
 
 
 process.on('uncaughtException',(err,origin)=>{
-    console.log(err,origin)
+    console.log(err,origin);
+})
+process.on("unhandledRejection",(err,origin)=>{
+    console.log(err,origin);
 })
 
 drive(options)
