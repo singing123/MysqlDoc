@@ -1,7 +1,7 @@
 const josnDrive = require('./drive/json');
 const htmlDrive = require('./drive/html');
 const xmlDrive = require('./drive/xml');
-const markdown = require('./drive/markdown');
+const markdownDrive = require('./drive/markdown');
 const fs = require("fs-extra");
 const path = require('path');
 const mysql = require('./db/mysql');
@@ -39,7 +39,7 @@ function drive(opt){
                 name += '.json';
                 break;
             case "markdown":
-                parse_str = markdown(data);
+                parse_str = markdownDrive(data);
                 name += '.md';
                 break;
         }
@@ -51,8 +51,5 @@ function drive(opt){
     })
 
 }
-
-
-
 
 module.exports = drive;
