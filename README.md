@@ -11,7 +11,7 @@
 
 ## Parameter
 
-` 
+```js
   -V, --version              output the version number
   -h, --host <host>          MySql connection host (default: "localhost")
   -u, --user <user>          MySql connection user (default: "root")
@@ -28,4 +28,4 @@
   --title <title>            Document title (default: "Database dictionary")
   --DocVersion <DocVersion>  Document version (default: "1.0.0")
   --help                     display help for command
-`
+```
